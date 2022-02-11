@@ -1,8 +1,62 @@
-body {
-  background-color: red;
+@import url(https://fonts.googleapis.com/css?family=Open+Sans&display=swap);@import url(https://fonts.googleapis.com/css?family=Teko&display=swap);* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body p {
-  color: blue;
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 100%;
 }
 
+.container {
+  width: 100%;
+}
+
+.container-90 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.products {
+  width: 100%;
+  background-image: url("../../img/fondo-pag-speciali.jpg");
+}
+
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.products__list .card {
+  width: calc(33.3333333333% - 2em);
+  margin-bottom: 2em;
+  background-color: white;
+}
+.products__list .card__img img {
+  width: 70%;
+}
+
+.header__nav__list {
+  list-style: none;
+}
+.header__nav__list-item {
+  display: inline-block;
+  padding: 1em;
+}
+.header__nav__list-item:hover, .header__nav__list-item:active, .header__nav__list-item:focus, .header__nav__list-item.active {
+  background-color: aqua;
+}
+.header__nav__list-item a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header__logo {
+  width: 180px;
+}

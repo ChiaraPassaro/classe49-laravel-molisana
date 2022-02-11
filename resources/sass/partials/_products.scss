@@ -1,0 +1,18 @@
+.products {
+    width: 100%;
+    background-image: url("../../img/fondo-pag-speciali.jpg");
+}
+
+.products__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .card {
+        width: calc((100% / 3) - 2em);
+        margin-bottom: 2em;
+        background-color: white;
+        &__img img {
+            width: 70%;
+        }
+    }
+}

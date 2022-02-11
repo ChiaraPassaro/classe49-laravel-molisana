@@ -1,0 +1,23 @@
+.header__nav {
+    &__list {
+        list-style: none;
+    }
+    &__list-item {
+        display: inline-block;
+        padding: 1em;
+        &:hover,
+        &:active,
+        &:focus,
+        &.active {
+            background-color: aqua;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+}
+.header__logo {
+    width: 180px;
+}

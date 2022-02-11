@@ -1,7 +1,5 @@
-//
-body {
-    background-color: red;
-    p {
-        color: blue;
-    }
-}
+@import "partials/variables";
+@import "partials/common";
+@import "partials/products";
+@import "partials/header";
+@import "partials/footer";
