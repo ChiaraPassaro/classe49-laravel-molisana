@@ -28,7 +28,7 @@ html {
 }
 
 .product__type {
-  color: blue;
+  color: #3968a0;
   text-transform: uppercase;
 }
 
@@ -61,7 +61,7 @@ html {
 .header__nav__list-item:active,
 .header__nav__list-item:focus,
 .header__nav__list-item.active {
-  background-color: aqua;
+  background-color: #b3d0e7;
 }
 
 .header__nav__list-item a {

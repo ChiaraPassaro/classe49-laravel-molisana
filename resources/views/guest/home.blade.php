@@ -18,7 +18,7 @@
               <img src="{{ $item_pasta['src-p'] }}" alt="{{$item_pasta['titolo'] }}">
             </div>
             <div class="card__titolo">
-              <h2><a href="{{route('product', $item_pasta['id'])}}">{{ $item_pasta['titolo'] }}</a></h2>
+              <h2><a href="{{ route('product', $item_pasta['id']) }}">{{ $item_pasta['titolo'] }}</a></h2>
             </div>
           </div>
       @endforeach
