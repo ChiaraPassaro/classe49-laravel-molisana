@@ -10,18 +10,44 @@
   dd($pasta)    
 @endphp --}}
   <main class="products">
-    <h1 class="products__title">Siamo in home</h1>
+    <h2 class="product__type container-90">Lunga</h2>
     <div class="products__list container-90">
-      @foreach ($pasta as $item_pasta)
+      @foreach ($lunghe as $item_pasta)
           <div class="card text-center">
             <div class="card__img">
               <img src="{{ $item_pasta['src-p'] }}" alt="{{$item_pasta['titolo'] }}">
             </div>
             <div class="card__titolo">
-              <h2>{{ $item_pasta['titolo'] }}</h2>
+              <h2><a href="{{route('product', $item_pasta['id'])}}">{{ $item_pasta['titolo'] }}</a></h2>
             </div>
           </div>
-          @endforeach
+      @endforeach
+    </div>
+    <h2 class="product__type container-90">Corta</h2>
+    <div class="products__list container-90">
+      @foreach ($corte as $item_pasta)
+          <div class="card text-center">
+            <div class="card__img">
+              <img src="{{ $item_pasta['src-p'] }}" alt="{{$item_pasta['titolo'] }}">
+            </div>
+            <div class="card__titolo">
+              <h2><a href="{{route('product', $item_pasta['id'])}}">{{ $item_pasta['titolo'] }}</a></h2>
+            </div>
+          </div>
+      @endforeach
+    </div>
+    <h2 class="product__type container-90">Cortissima</h2>
+    <div class="products__list container-90">
+      @foreach ($cortissime as $item_pasta)
+          <div class="card text-center">
+            <div class="card__img">
+              <img src="{{ $item_pasta['src-p'] }}" alt="{{$item_pasta['titolo'] }}">
+            </div>
+            <div class="card__titolo">
+              <h2><a href="{{route('product', $item_pasta['id'])}}">{{ $item_pasta['titolo'] }}</a></h2>
+            </div>
+          </div>
+      @endforeach
     </div>
   </main>
 @endsection

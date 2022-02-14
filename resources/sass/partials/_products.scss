@@ -1,6 +1,10 @@
 .products {
     width: 100%;
-    background-image: url("../../img/fondo-pag-speciali.jpg");
+    background-image: url("/img/fondo-pag-speciali.jpg");
+}
+.product__type {
+    color: blue;
+    text-transform: uppercase;
 }
 
 .products__list {
